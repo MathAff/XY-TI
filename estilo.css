@@ -1,0 +1,107 @@
+* {
+    font-family: "Roboto Mono", monospace;
+    color: #010305;
+}
+
+
+body {
+    margin: 0;
+}
+
+.site {
+    margin: 0;
+    background: linear-gradient(130deg, #2C3D52, #2C5F78,#3E849E);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    box-sizing: unset;
+    margin: 25px 50px;
+    width: 60px;
+}
+
+.navbar {
+    margin: 0 50px;
+}
+
+.nav-list {
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    font-size: 1.5rem;
+    font-family: "Roboto Mono", monospace;
+    list-style-type: none;
+}
+
+.nav-link {
+    margin: 0 0 0 25px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 100%;
+}
+
+.intro-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.intro-img {
+    margin: 0 0 0 10%;
+    width: 500px;
+    height: 642px;
+}
+
+.text {
+    margin: 100px;
+    color: #fff;
+}
+
+.intro-div .title {
+    width: auto;
+    font-size: 3rem;
+    font-family: "Roboto Mono", monospace;
+}
+
+.intro-div .description {
+    margin: 0 0 0 10px;
+    width: 400px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.description {
+    font-size: 1.5rem;
+}
+
+button {
+    margin: 2rem 0 0 100px;
+    padding: 10px 20px;
+    background-color: #3E849E;
+    border: none;
+    border-radius: 10px;
+    box-shadow: -9px 9px 20px #0103056e;
+    font-size: 1.3rem;
+}
+
+.intro-two {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro-two .text {
+
+}
