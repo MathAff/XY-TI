@@ -10,7 +10,9 @@ body {
 
 .site {
     margin: 0;
-    background: linear-gradient(130deg, #2C3D52, #2C5F78,#3E849E);
+    background: linear-gradient(130deg, #3E849E, #2C5F78, #2C3D52);
+    width: 100%;
+    height: 100%;
 }
 
 header {
@@ -68,11 +70,9 @@ main {
 
 .text {
     margin: 100px;
-    color: #fff;
 }
 
-.intro-div .title {
-    width: auto;
+.title {
     font-size: 3rem;
     font-family: "Roboto Mono", monospace;
 }
@@ -80,28 +80,53 @@ main {
 .intro-div .description {
     margin: 0 0 0 10px;
     width: 400px;
-    font-family: "Open Sans", sans-serif;
 }
 
 .description {
     font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+    color: #C4C4C4;
 }
 
 button {
     margin: 2rem 0 0 100px;
     padding: 10px 20px;
-    background-color: #3E849E;
+    background-color: #51ACC5;
     border: none;
     border-radius: 10px;
-    box-shadow: -9px 9px 20px #0103056e;
+    box-shadow: -5px 5px 10px #0103056e;
     font-size: 1.3rem;
 }
 
-.intro-two {
+button:hover {
+    cursor: pointer;
+    background-color: #3E849E;
+}
+
+.intro-two, .about-us, .why-us, .contact {
     display: flex;
     justify-content: space-between;
 }
 
 .intro-two .text {
+    margin: 100px;
+}
 
+.about-us .description {
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.maintenance-img {
+
+}
+
+.list .description {
+    margin: 60px 50px 60px 20px;
+    list-style-type: none;
+}
+
+.contact .description {
+    margin: 60px 50px 60px 20px;
 }
