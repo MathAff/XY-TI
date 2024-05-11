@@ -67,7 +67,7 @@ main {
 }
 
 .text {
-    margin: 100px;
+    padding: 100px;
 }
 
 .title {
@@ -77,7 +77,7 @@ main {
 
 .intro-div .description {
     margin: 0 0 0 10px;
-    width: 400px;
+    width: 40%;
 }
 
 .description {
@@ -104,10 +104,6 @@ button:hover {
 .intro-two, .about-us, .why-us, .contact {
     display: flex;
     justify-content: space-between;
-}
-
-.intro-two .text {
-    margin: 100px;
 }
 
 .about-us .description {
@@ -138,37 +134,44 @@ footer {
     .intro-div {
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
     .text {
-        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
     }
 }
 
 @media (max-width: 850px) {
+    header {
+        flex-direction: column;
+    }
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+    }
     .logo-img {
         width: 30px;
-    }
-    .intro-div {
-        padding: 80px;
     }
     .intro-div img {
         margin: 10px;
         width: 200px;
     }
-    a li {
-        width: 0;
-        height: 0;
-    }
     .about-us {
         display: flex;
         flex-direction: column;
     }
-    .nav-item, .title, button, .description {
+    .title {
+        font-size: 30px;
+    }
+    .nav-item, button, .description {
         font-size: 12px;
         margin: 30px;
     }
     button {
         width: 200px;
-        height: 20px;
+        height: 40px;
     }
 }
