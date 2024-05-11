@@ -58,7 +58,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 160px 10%;
+    padding:20px 10%;
 }
 
 .intro-img {
@@ -67,17 +67,22 @@ main {
 }
 
 .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 100px;
 }
 
 .title {
+    margin: 0;
+    text-align: center;
     font-size: 3rem;
     font-family: "Roboto Mono", monospace;
 }
 
 .intro-div .description {
-    margin: 0 0 0 10px;
-    width: 40%;
+    text-align: center;
+    margin-left: 10px;
 }
 
 .description {
@@ -87,13 +92,12 @@ main {
 }
 
 button {
-    margin: 2rem 0 0 100px;
     padding: 10px 20px;
     background-color: #51ACC5;
     border: none;
     border-radius: 10px;
     box-shadow: -5px 5px 10px #0103056e;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 button:hover {
@@ -122,10 +126,79 @@ button:hover {
 }
 
 footer {
+    padding-top: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    padding: 0 10%;
+}
+
+.div-logo {
+    display: flex;
+}
+
+.footer-top .div-logo .title {
+    font-size: 2.7rem;
+}
+
+.footer-top img {
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 2.7rem;
+    height: 2.7rem;
+}
+
+.footer-top .title {
+    font-size: 3rem;
+    color: #FFF;
+    margin: 0;
+}
+
+footer .description {
+    text-align: center;
+    padding: 0 10%;
+    font-size: 1rem;
+    color: #FFF;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 20px;
+}
+.footer-item {
+    list-style-type: none;
     display: flex;
     align-items: center;
 }
 
+.footer-item p {
+    margin-left: 10px;
+    color: #FFF;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.footer-item svg {
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFF;
+}
 /*Responsiviness*/
 @media (max-width: 1200px) {
     header  {
@@ -143,7 +216,6 @@ footer {
         padding: 30px;
     }
 }
-
 @media (max-width: 850px) {
     header {
         flex-direction: column;
@@ -166,12 +238,18 @@ footer {
     .title {
         font-size: 30px;
     }
-    .nav-item, button, .description {
+    .nav-item, button, .description, p {
         font-size: 12px;
         margin: 30px;
+    }
+    .footer-top .description, .footer-list .footer-item .description {
+        font-size: 12px;
     }
     button {
         width: 200px;
         height: 40px;
+    }
+    .footer-bottom {
+        font-size: 12px;
     }
 }
