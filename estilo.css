@@ -65,6 +65,13 @@ main {
     padding:20px 10%;
 }
 
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 10%;
+}
+
 .intro-img {
     margin: 0 10% 0 0;
     width: 400px;
@@ -117,7 +124,6 @@ main {
 
 .service-item .text .description {
     margin-top: 70px;
-    padding: ;
     text-align: justify;
 }
 
@@ -234,6 +240,11 @@ footer .description {
     header  {
         padding: 10px;
     }
+    .intro {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
     .intro-div {
         display: flex;
         flex-direction: column;
@@ -257,7 +268,7 @@ footer .description {
     .logo-img {
         width: 30px;
     }
-    .intro-div img {
+    .intro-img {
         margin: 10px;
         width: 200px;
     }
