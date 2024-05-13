@@ -273,6 +273,11 @@ footer .description {
     color: #FFF;
 }
 
+.quote {
+    text-align: center;
+    font-size: 2rem;
+}
+
 .footer-list {
     display: flex;
     flex-direction: column;
@@ -377,6 +382,9 @@ footer .description {
     }
     .contact-div .text .description{
         margin: 0;
+    }
+    .quote {
+        font-size: 18px;
     }
     input {
         height: 12px;
